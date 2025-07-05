@@ -12,7 +12,7 @@ const HandleNavbar = () => {
     <Box
       component="section"
       sx={{
-        backgroundColor: "#f5f5f5",
+        backgroundColor: "secondary",
         p: 1,
       }}
     >

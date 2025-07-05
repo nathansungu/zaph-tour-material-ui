@@ -8,13 +8,13 @@ function App() {
   palette: {
     mode: 'light',
     primary: {
-      main: '#1976d2', 
+      main:'#003915', 
     },
     secondary: {
-      main: '#f50057',
+      main: '#516351',
     },
     background: {
-      default: '#f4f4f4',
+      default: '#b6f1bb',
     },
   },
   typography: {
