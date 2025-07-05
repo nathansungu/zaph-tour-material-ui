@@ -43,16 +43,15 @@ const ExpandMore = styled((props: ExpandMoreProps) => {
   ],
 }));
 
-type dst ={
-    titi:String,
-    image:String,
-    description:String,
+type dst = {
+  title: string;
+  image: string;
+  description: string;
+  offer: number;
+  price: number;
+};
 
-
-}
-
-
-const HandleTripsCard = (dst:{}) => {
+const HandleTripsCard = (dst: dst) => {
   const [expanded, setExpanded] = React.useState(false);
 
   const handleExpandClick = () => {
@@ -78,13 +77,18 @@ const HandleTripsCard = (dst:{}) => {
                   direction="row"
                   sx={{ gap: "1rem", mt: ".5rem" }}
                 >
-                  {dst.offer > 0 && (
-                    <Typography color="red">
-                      {(dst.price * dst.offer) / 100}
-                    </Typography>
+                  {dst.offer > 0 ? (
+                    <>
+                      <Stack direction="row" spacing={2} textAlign="center">
+                        <Typography color="red">
+                          {(dst.price * dst.offer) / 100}
+                        </Typography>
+                        <Typography sx={{textDecoration:"line-through double"}} color="red">{dst.price}</Typography>
+                      </Stack>
+                    </>
+                  ) : (
+                    <Typography color="red">{dst.price}</Typography>
                   )}
-
-                  <Typography color="red">{dst.price}</Typography>
                 </Stack>
               </Stack>
             </CardContent>
@@ -110,7 +114,6 @@ const HandleTripsCard = (dst:{}) => {
           </Collapse>
         </Card>
       </Grid>
-      );
     </>
   );
 };
