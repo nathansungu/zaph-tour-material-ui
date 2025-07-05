@@ -9,6 +9,7 @@ const HandleHeader = () => {
         m: 0,
         backgroundColor: "brown",
         color: "white",
+        display: { xs: 'none', sm: 'none', md: 'block' } 
       }}
     >
       <Stack
