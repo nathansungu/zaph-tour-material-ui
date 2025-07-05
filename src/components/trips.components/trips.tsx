@@ -14,7 +14,7 @@ const HandleTrips = () => {
   return (
     <Grid container spacing={2}>
       {trips.map((dst) => {
-        return <HandleTripsCard {...dst}/>;
+        return <HandleTripsCard dst={dst}/>;
       })}
     </Grid>
   );

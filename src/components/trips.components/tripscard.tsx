@@ -1,4 +1,4 @@
-import React from "react";
+import React, { type FC } from "react";
 import HandleGallery from "./gallery";
 import { styled } from "@mui/material/styles";
 import { Favorite, Share } from "@mui/icons-material";
@@ -51,7 +51,11 @@ type dst = {
   price: number;
 };
 
-const HandleTripsCard = (dst: dst) => {
+interface dataPropd {
+  dst: dst;
+}
+
+const HandleTripsCard: FC<dataPropd> = ({ dst }) => {
   const [expanded, setExpanded] = React.useState(false);
 
   const handleExpandClick = () => {
@@ -60,7 +64,7 @@ const HandleTripsCard = (dst: dst) => {
   return (
     <>
       <Grid size={{ xs: 12, md: 4, sm: 6 }}>
-        <Card sx={{ margin: 2 }}>
+        <Card>
           <CardMedia
             component="img"
             src={dst.image}
@@ -83,7 +87,12 @@ const HandleTripsCard = (dst: dst) => {
                         <Typography color="red">
                           {(dst.price * dst.offer) / 100}
                         </Typography>
-                        <Typography sx={{textDecoration:"line-through double"}} color="red">{dst.price}</Typography>
+                        <Typography
+                          sx={{ textDecoration: "line-through double" }}
+                          color="red"
+                        >
+                          {dst.price}
+                        </Typography>
                       </Stack>
                     </>
                   ) : (
@@ -110,7 +119,7 @@ const HandleTripsCard = (dst: dst) => {
             </ExpandMore>
           </CardActions>
           <Collapse in={expanded} timeout="auto" unmountOnExit>
-            <HandleGallery />
+            <HandleGallery name={dst.title} />
           </Collapse>
         </Card>
       </Grid>
