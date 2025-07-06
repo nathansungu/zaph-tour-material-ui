@@ -9,7 +9,7 @@ const HandleHeader = () => {
         m: 0,
         backgroundColor: "primary.light",
         color: "white",
-        display: { xs: "none", sm: "none", md: "block" },
+        height:22,
         position: "fixed",
         width: "100%",
         top: 0,
@@ -27,7 +27,7 @@ const HandleHeader = () => {
           <Typography sx={{ fontSize: "1rem" }}>zaphus@gmail.com</Typography>
         </Stack>
 
-        <Stack direction="row" gap={1} alignItems="center">
+        <Stack direction="row" gap={1} alignItems="center" sx={{display: { xs: "none", sm: "none", md: 'flex' },}}>
           <LocationOn sx={{ color: "white", fontSize: "1.5rem" }} />
           <Typography sx={{ fontSize: "1rem" }}>Nairobi, Kenya</Typography>
         </Stack>

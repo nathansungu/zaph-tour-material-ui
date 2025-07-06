@@ -9,11 +9,12 @@ const HandleNavbar = () => {
       sx={{
         backgroundColor: "secondary.dark",
         pt: 2,
+        pb:1,
         position:"fixed",
         width:"100%",
-        top:20,
+        top:22,
         left:0,
-        zIndex:199999
+        zIndex:19
       }}
     >
       <Stack direction="row" alignItems="center" justifyContent="space-around">

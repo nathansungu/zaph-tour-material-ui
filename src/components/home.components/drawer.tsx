@@ -21,7 +21,7 @@ function HandleDrawer() {
   };
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex", zIndex:20}}>
       <Button variant="outlined" sx={{width:"2rem"}}onClick={toggleDrawer(true)}>
        <MenuSharp/>
       </Button>
