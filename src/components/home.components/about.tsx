@@ -11,7 +11,7 @@ import {
 import { Favorite, Share } from "@mui/icons-material";
 const HandleAbout = () => {
   return (
-    <Grid sx={{ m: 0.8 }}>
+    <Grid sx={{ m: 0.5 , mt:3}}>
       <Card elevation={3} sx={{boxShadow:10}}>
         <CardHeader
           title={
