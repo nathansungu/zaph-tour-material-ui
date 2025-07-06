@@ -6,7 +6,7 @@ import{
     Button
 
 } from "@mui/material"
-
+import HandleDrawer from "./drawer";
 const HandleNavbar = () => {
   return (
     <Box
@@ -14,13 +14,18 @@ const HandleNavbar = () => {
       sx={{
         backgroundColor: "secondary",
         p: 1,
+        
       }}
     >
       <Stack direction="row" alignItems="center" justifyContent="space-between">
         <Typography variant="h4" fontWeight="700">
           zaphus tours
         </Typography>
-        <Stack direction="row" spacing={2} width="70%" justifyContent="center">
+        <Stack sx={{display:{xs: 'block', sm: 'none', md: 'none'}}}>
+       <HandleDrawer />
+    </Stack>
+        <Stack direction="row" spacing={2} width="70%" justifyContent="center" sx={{display:{xs:'none' ,sm:'block' ,xl:'block'}}}>
+          
           <Button
             component={Link}
             to="/"

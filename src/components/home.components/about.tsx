@@ -1,8 +1,17 @@
-import { Stack, Card, CardHeader, Typography, CardMedia,CardContent, CardActions, IconButton,} from "@mui/material";
+import {
+  Card,
+  CardHeader,
+  Typography,
+  CardMedia,
+  CardContent,
+  CardActions,
+  IconButton,
+  Grid,
+} from "@mui/material";
 import { Favorite, Share } from "@mui/icons-material";
 const HandleAbout = () => {
   return (
-    <Stack sx={{ m: 0.3 }}>
+    <Grid sx={{ m: 0.3 }}>
       <Card elevation={3}>
         <CardHeader
           title={
@@ -17,39 +26,49 @@ const HandleAbout = () => {
           }
           sx={{ backgroundColor: "#f5f5f5" }}
         />
-        <Stack direction="row" alignItems="center">
-          <CardMedia
-            component="img"
-            image="/hero.jpg"
-            height="270"
-            sx={{ borderRadius: "2px", width: "40%", padding: "1.5rem" }}
-          />
-          <CardContent>
-            <Typography
-              variant="body1"
-              sx={{ width: "80%", textAlign: "center" }}
-            >
-              Zaph Tours is a top-rated travel company based in Kenya, known for
-              crafting unforgettable safari and adventure experiences. They
-              specialize in showcasing the stunning landscapes, rich wildlife,
-              and diverse cultures of Kenya and beyond through carefully curated
-              travel packages.
-            </Typography>
-            <CardActions disableSpacing>
-              <IconButton
-                aria-label="add to favorites"
-                sx={{ color: "success" }}
+        <Grid
+          container
+          spacing={2}
+          sx={{ alignItems: "center", justifyContent: "center"}}
+        >
+          <Grid size={{ xs: 10, md: 6, xl: 4 }}>
+            <CardMedia
+              component="img"
+              image="/hero.jpg"
+              height="270"
+              sx={{ borderRadius: "2px", padding: "1.5rem" }}
+            />
+          </Grid>
+          <Grid
+            size={{ xs: 10, md: 6, xl: 8 }}
+          >
+            <CardContent sx={{pl:"6rem"}}>
+              <Typography
+                variant="body1"
+                sx={{ width: "80%", textAlign: "center" }}
               >
-                <Favorite />
-              </IconButton>
-              <IconButton aria-label="share">
-                <Share />
-              </IconButton>
-            </CardActions>
-          </CardContent>
-        </Stack>
+                Zaph Tours is a top-rated travel company based in Kenya, known
+                for crafting unforgettable safari and adventure experiences.
+                They specialize in showcasing the stunning landscapes, rich
+                wildlife, and diverse cultures of Kenya and beyond through
+                carefully curated travel packages.
+              </Typography>
+              <CardActions sx={{alignItems:"center", justifyContent:"center", pt:"2rem"}}>
+                <IconButton
+                  aria-label="add to favorites"
+                  sx={{ color: "success" }}
+                >
+                  <Favorite />
+                </IconButton>
+                <IconButton aria-label="share">
+                  <Share />
+                </IconButton>
+              </CardActions>
+            </CardContent>
+          </Grid>
+        </Grid>
       </Card>
-    </Stack>
+    </Grid>
   );
 };
 
