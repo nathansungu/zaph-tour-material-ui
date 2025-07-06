@@ -1,8 +1,9 @@
 
 import HandleNavbar from "../components/home.components/navbar";
-import {HandleContactDetails, HandleHeader, HandleContactForm, HandleMapEmbed, HandleFooter,
+import {HandleContactDetails, HandleHeader, HandleContactForm, HandleMapEmbed
 } from "../components/contacts.components/handleContact"
 
+import HandleFooter from "../components/footer";
 const Contacts = () => {
   return (
     <>

@@ -6,6 +6,7 @@ import HandleHeroSection from "../components/home.components/hero";
 import HandleAbout from "../components/home.components/about";
 import HandleTestimonials from "../components/home.components/testimonials";
 import HandleNewsLetter from "../components/home.components/newsletter";
+import HandleFooter from "../components/footer";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <HandleDestination />
       <HandleTestimonials />
       <HandleNewsLetter />
+      <HandleFooter/>
     </>
   );
 };
