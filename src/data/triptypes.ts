@@ -3,7 +3,7 @@ const trips = [
     title: "Honeymoon",
     description: "Indulge in a luxury all-inclusive Jamaica honeymoon at Zoetry Montego Ba, offering the finest in gourmet. ",
     image: "/honeymoon.jpg",
-    gallery:[""],
+    gallery:["/honey.avif", "/honeymoon-a.avif"],
     price: 120000,
     offer: 10
   },
@@ -11,7 +11,7 @@ const trips = [
     title: "Family",
     description: "Fun-filled trips perfect for the whole family, with activities and comfort for all ages.",
     image: "/family-1.jpg",
-    gallery:["/family-1.jpg", "/family-2.jpg"],
+    gallery:["/family-a.jpg", "/family-2.jpg"],
     price: 95000,
     offer: 0
   },
@@ -26,8 +26,8 @@ const trips = [
   {
     title: "Cultural Tours",
     description: "Explore rich cultures, heritage sites, and local traditions in immersive tours.",
-    image: "/cultural-3.jpg",
-    gallery:["/caltural-3.jpg", ],
+    image: "/cultural-1.jpg",
+    gallery:["/cultural-3.jpg", "/cultural-a.jpg"],
     price: 85000,
     offer: 0
   },
@@ -43,6 +43,7 @@ const trips = [
     title: "Eco-Tours",
     description: "Sustainable travel that lets you explore nature responsibly and impactfully.",
     image: "/eco-tour-1.jpg",
+    gallery:["/echo-a.jpg", "/echo-b.jpg"],
     price: 90000,
     offer: 0
   },
@@ -50,7 +51,7 @@ const trips = [
     title: "Luxury Vacations",
     description: "Top-tier travel with five-star accommodations, exclusive services, and indulgent experiences.",
     image: "/luury-1.jpg",
-    gallery:["/luary-2.webp"],
+    gallery:["/luary-2.webp", "luuryy.jpg"],
     price: 200000,
     offer: 25
   },
@@ -58,7 +59,7 @@ const trips = [
     title: "Beach Holidays",
     description: "Relax under the sun on pristine beaches with crystal-clear waters and golden sands.",
     image: "/beach-2.jpg",
-    gallery:["/beach-1.jpg"],
+    gallery:["/beach-1.jpg", "beach-a.jpeg"],
     price: 105000,
     offer: 0
   },
@@ -73,8 +74,8 @@ const trips = [
   {
     title: "Culinary Tours",
     description: "Savor flavors of the world with food-focused trips that include tastings, classes, and local chefs.",
-    image: "/culinary-2.jpg",
-    gallery:["/culinary.jpg", "culinary-2.jpg", "culinary-3.jpg"],
+    image: "/culinary-3.jpg",
+    gallery:["Culinary-a.jpg", "Culinary-b.jpeg"],
     price: 95000,
     offer: 0
   }

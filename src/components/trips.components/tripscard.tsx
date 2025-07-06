@@ -63,7 +63,7 @@ const HandleTripsCard: FC<dataPropd> = ({ dst }) => {
   };
   return (
     <>
-      <Grid size={{ xs: 12, md: 4, sm: 6 }}>
+      <Grid  size={{ xs: 12, md: 4, sm: 6 }}>
         <Card>
           <CardMedia
             component="img"

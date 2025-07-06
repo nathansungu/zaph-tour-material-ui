@@ -17,7 +17,7 @@ import { Link } from "react-router-dom";
 const HandleCards = () => {
   return (
     <>
-      <Grid container spacing={2}>
+      <Grid container spacing={2} >
         {destinations.map((dst) => {
           return (
             <Grid size={{ xs: 12, md: 4, sm: 6 }}>

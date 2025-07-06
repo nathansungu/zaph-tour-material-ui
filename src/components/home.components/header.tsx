@@ -7,8 +7,8 @@ const HandleHeader = () => {
       sx={{
         p: 0,
         m: 0,
-        backgroundColor: "primary.light",
-        color: "white",
+        backgroundColor: "background.paper",
+        color: "secondary",
         height:22,
         position: "fixed",
         width: "100%",
@@ -23,17 +23,17 @@ const HandleHeader = () => {
         spacing={2}
       >
         <Stack direction="row" gap={1} alignItems="center">
-          <Email sx={{ color: "white", fontSize: "1.5rem" }} />
+          <Email sx={{ color: "primary", fontSize: "1.5rem" }} />
           <Typography sx={{ fontSize: "1rem" }}>zaphus@gmail.com</Typography>
         </Stack>
 
         <Stack direction="row" gap={1} alignItems="center" sx={{display: { xs: "none", sm: "none", md: 'flex' },}}>
-          <LocationOn sx={{ color: "white", fontSize: "1.5rem" }} />
+          <LocationOn sx={{ color: "primary", fontSize: "1.5rem" }} />
           <Typography sx={{ fontSize: "1rem" }}>Nairobi, Kenya</Typography>
         </Stack>
 
         <Stack direction="row" gap={1} alignItems="center">
-          <Phone sx={{ color: "white", fontSize: "1.5rem" }} />
+          <Phone sx={{ color: "primary", fontSize: "1.5rem" }} />
           <Typography sx={{ fontSize: "1rem" }}>+254 712 345678</Typography>
         </Stack>
       </Stack>

@@ -25,7 +25,7 @@ const HandleNavbar = () => {
             borderRadius="50%"
             height="4rem"
           />
-          <Typography variant="h6" fontWeight="500">
+          <Typography variant="h4" fontWeight="500">
             zaphus tours
           </Typography>
         </Stack>

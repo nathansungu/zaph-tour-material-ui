@@ -4,6 +4,7 @@ const HandleHeroSection = () => {
     <Box
       sx={{
         m: 0.2,
+        mt:10,
         height: "35rem",
         padding: 0,
         backgroundPosition: "center",

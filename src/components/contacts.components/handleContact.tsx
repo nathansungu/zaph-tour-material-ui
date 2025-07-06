@@ -8,25 +8,7 @@ import {
   TextField,
   Button,
   Box,
-  CardMedia,
 } from "@mui/material";
-
-const HandleHeader = () => {
-  return (
-    <Stack
-      sx={{
-        textAlign: "center",
-        backgroundColor: "background.light",
-        pt: 2,
-        direction: "column",
-      }}
-    >
-      <Typography sx={{ fontSize: "2.5em", fontWeight: "bold" }}>
-        Contact Us
-      </Typography>
-    </Stack>
-  );
-};
 
 const HandleContactForm = () => {
   return (
@@ -150,5 +132,5 @@ export {
   HandleMapEmbed,
   HandleContactDetails,
   HandleContactForm,
-  HandleHeader,
+  
 };
