@@ -21,7 +21,7 @@ const HandleCards = () => {
         {destinations.map((dst) => {
           return (
             <Grid size={{ xs: 12, md: 4, sm: 6 }}>
-              <Card sx={{ margin: 2, height: "30rem" }}>
+              <Card sx={{ margin: 2, height: "32rem" }}>
                 <CardMedia
                   component="img"
                   src={dst.image}
@@ -41,12 +41,12 @@ const HandleCards = () => {
                         sx={{ gap: "1rem", mt: ".5rem" }}
                       >
                         <Stack direction="row" gap={2}>
-                          <Typography>solo trip: {"  "}</Typography>
+                          <Typography>solo: {"  "}</Typography>
                           
                           <Typography color="red">{dst.price}</Typography>
                         </Stack>
                         <Stack direction="row"gap={2}>
-                          <Typography>group of 10: {"  "}</Typography>
+                          <Typography>group: {"  "}</Typography>
                           
                           <Typography color="red">{dst.priceFor10}</Typography>
                         </Stack>
