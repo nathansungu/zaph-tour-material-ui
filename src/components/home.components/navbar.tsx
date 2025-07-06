@@ -7,12 +7,13 @@ const HandleNavbar = () => {
     <Box
       component="section"
       sx={{
-        backgroundColor: "",
+        backgroundColor: "secondary.dark",
         pt: 2,
         position:"fixed",
         width:"100%",
         top:20,
         left:0,
+        zIndex:199999
       }}
     >
       <Stack direction="row" alignItems="center" justifyContent="space-around">
