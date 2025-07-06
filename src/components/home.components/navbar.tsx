@@ -1,16 +1,21 @@
 import { Link } from "react-router-dom";
 import { Box, Typography, Stack, Button } from "@mui/material";
 import HandleDrawer from "./drawer";
+import { SearchSharp } from "@mui/icons-material";
 const HandleNavbar = () => {
   return (
     <Box
       component="section"
       sx={{
-        backgroundColor: "secondary",
-        p: 1,
+        backgroundColor: "",
+        pt: 2,
+        position:"fixed",
+        width:"100%",
+        top:20,
+        left:0,
       }}
     >
-      <Stack direction="row" alignItems="center" justifyContent="space-between">
+      <Stack direction="row" alignItems="center" justifyContent="space-around">
         <Stack direction="row" alignItems="center" gap={1}>
           <Stack
             component="img"
@@ -26,10 +31,11 @@ const HandleNavbar = () => {
         <Stack sx={{ display: { xs: "block", sm: "none", md: "none" } }}>
           <HandleDrawer />
         </Stack>
+
         <Stack
           direction="row"
           spacing={2}
-          width="70%"
+          width="50%"
           justifyContent="center"
           sx={{ display: { xs: "none", sm: "block", xl: "block" } }}
         >
@@ -60,6 +66,11 @@ const HandleNavbar = () => {
             sx={{ fontSize: "1.5rem", textTransform: "capitalize" }}
           >
             Contacts
+          </Button>
+        </Stack>
+        <Stack sx={{display:{xs:'none', md:'flex', xl:'flex'} }}>
+          <Button>
+            <SearchSharp/>
           </Button>
         </Stack>
       </Stack>

@@ -10,6 +10,10 @@ const HandleHeader = () => {
         backgroundColor: "primary.light",
         color: "white",
         display: { xs: "none", sm: "none", md: "block" },
+        position: "fixed",
+        width: "100%",
+        top: 0,
+        left: 0,
       }}
     >
       <Stack
