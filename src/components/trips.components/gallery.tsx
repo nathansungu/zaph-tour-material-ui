@@ -1,4 +1,4 @@
-import { CardMedia, Grid } from "@mui/material";
+import { CardMedia, Grid, Stack } from "@mui/material";
 import trips from "../../data/triptypes";
 import type { FC } from "react";
 
@@ -10,7 +10,11 @@ const displayGallery = (name: string) => {
  
   return card[0].gallery?.map((img, ind) => (
     <Grid key={ind} size={{ xs: 12, sm: 6, xl: 4 }}>
-      <CardMedia component="img" src={img} />
+      <Stack sx={{ height:180}}>
+        <CardMedia component="img" src={img}  sx={{objectFit:"cover", height:"100%" , width:"100%"}}/>
+
+      </Stack>
+      
     </Grid>
   ));
 };
