@@ -6,6 +6,7 @@ import {
   CardContent,
   CardMedia,
   Grid,
+  IconButton,
   Stack,
   Typography,
 } from "@mui/material";
@@ -20,7 +21,7 @@ const HandleCards = () => {
         {destinations.map((dst) => {
           return (
             <Grid size={{ xs: 12, md: 4, sm: 6 }}>
-              <Card sx={{ margin: 2, height: "28rem" }}>
+              <Card sx={{ margin: 2, height: "30rem" }}>
                 <CardMedia
                   component="img"
                   src={dst.image}
@@ -54,19 +55,19 @@ const HandleCards = () => {
                     </Stack>
                   </CardContent>
                   <CardActions>
-                    <Stack direction="row" alignItems="center" gap="50%">
+                    <Stack direction="row" alignItems="center" gap={2}>
                       <Button
                         variant="outlined"
                         size="large"
                         component={Link}
-                        to="https://www.tsavopark.com/"
+                        to="https://www.tsavopark.co/"
                         sx={{ fontSize: "1rem", textTransform: "capitalize" }}
                       >
                         book now
                       </Button>
-                      {/* <IconButton>
+                      <IconButton>
                         <Favorite />
-                      </IconButton> */}
+                      </IconButton>
                     </Stack>
                   </CardActions>
                 </Stack>
