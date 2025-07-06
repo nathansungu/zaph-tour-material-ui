@@ -2,17 +2,14 @@ import { Stack, Box, Typography } from "@mui/material";
 import { Phone, Email, LocationOn } from "@mui/icons-material";
 const HandleHeader = () => {
   return (
-    <>
-    
-   
     <Box
       component="section"
       sx={{
         p: 0,
         m: 0,
-        backgroundColor: "brown",
+        backgroundColor: "primary.light",
         color: "white",
-        display: { xs: 'none', sm: 'none', md: 'block' } 
+        display: { xs: "none", sm: "none", md: "block" },
       }}
     >
       <Stack
@@ -37,9 +34,7 @@ const HandleHeader = () => {
         </Stack>
       </Stack>
     </Box>
-    </>
-    
   );
 };
 
-export default HandleHeader
+export default HandleHeader;

@@ -11,8 +11,8 @@ import {
 import { Favorite, Share } from "@mui/icons-material";
 const HandleAbout = () => {
   return (
-    <Grid sx={{ m: 0.3 }}>
-      <Card elevation={3}>
+    <Grid sx={{ m: 0.8 }}>
+      <Card elevation={3} sx={{boxShadow:10}}>
         <CardHeader
           title={
             <Typography
@@ -36,16 +36,16 @@ const HandleAbout = () => {
               component="img"
               image="/hero.jpg"
               height="270"
-              sx={{ borderRadius: "2px", padding: "1.5rem" }}
+              sx={{ borderRadius: "2px" }}
             />
           </Grid>
           <Grid
             size={{ xs: 10, md: 6, xl: 8 }}
           >
-            <CardContent sx={{pl:"6rem"}}>
+            <CardContent >
               <Typography
                 variant="body1"
-                sx={{ width: "80%", textAlign: "center" }}
+                sx={{ textAlign: "center" }}
               >
                 Zaph Tours is a top-rated travel company based in Kenya, known
                 for crafting unforgettable safari and adventure experiences.
